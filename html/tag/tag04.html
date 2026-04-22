@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 
+        a 태그 : 어떤 링크/대상으로 이동하는 태그
+        
+        href 속성 : 이동할 경로
+        target 속성 : 어떻게 띄울건지
+            _blank : 새창
+            _self  : 현재창  
+    -->
+
+    <a href="https://www.naver.com/" target="_self" title="네이버링크">네이버이동</a>
+    <br>
+    <a href="https://www.google.com/" target="_blank" title="구글링크">구글이동</a>
+    <br>
+
+    <a href="tag03.html" target="_self">tag03.html로 이동</a>
+    <a href="./tag03.html" target="_self">tag03.html로 이동</a>
+    <a href="../start.html" target="_self">start.html로 이동</a>
+    <a href="../quiz/quiz01.html" target="_blank">quiz01.html로 이동</a>
+
+    <!-- . 현재경로  .. 한단계 상위경로 -->
+
+
+    <!--
+        이미지태그 이미지표시 img
+
+        src속성 : 보여줄 이미지 소스경로
+    -->
+    <img src="img001.jpg" alt="두유사진">  <!--현재 파일과 동일경로-->
+    <img src="./img001.jpg" alt="두유사진"> <!--현재 파일과 동일경로-->
+    <img src="./img/img002.jpg" alt="콜라사진"> <!--하위 폴더 경로-->
+
+    <br><br>
+    <img src="../../images/img001.jpg" alt="두유사진">
+    <img src="../../images/img002.jpg" alt="콜라사진">
+    <!-- 상위 다른 폴더 경로 -->
+    
+    <!-- 외부 이미지 링크 주소를 통해서 연결 -->
+    <img src="https://thumbnail.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/16425520630042-9dcd32f1-a915-4924-935f-91debbc9dc6d.jpg" alt="휴지">
+    <img src="https://thumbnail.coupangcdn.com/thumbnails/remote/230x230ex/image/1025_amir_coupang_oct_80k/ca12/9b88a0325a006bc9b76a6d37ced4db41f68d8e9a785b938f18ec4e261202.jpg" alt="물티슈">
+
+
+    <br><br>
+
+    <a href="https://www.coupang.com/vp/products/130164876?itemId=21326386046&vendorItemId=4949572331&sourceType=gm_crm_goldbox&subSourceType=gm_crm_externallanding_s1139000_p10799999_a310_cGOLDBOX&omsPageId=121237&omsPageUrl=121237" target="_blank">
+        <img src="https://thumbnail.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/943896774536058-084f28ad-2c21-4ee4-bcc0-e6912a06198e.jpg" alt="건전지">
+    </a>
+</body>
+</html>
