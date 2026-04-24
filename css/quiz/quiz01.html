@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 구조적 가상 클래스 선택자 */
+        /* p:first-child { color: red; }
+
+        p:last-child { color: blue; } */
+
+        /* p:nth-child(3) { color: green; } */
+
+        /* p:nth-of-type(3) { color: orange; } */
+
+        /*
+            짝수 : even 2n
+            홀수 : odd  2n+1
+        */
+
+        /* p { color:orange; } */
+        /* h3 , h4 { color:orange; } */
+
+        /*#h3id, #h4id { color: orange; }
+        /* span { color: blue; }
+        #pid, #spid { color: blue; } */
+
+        .color-orange { color: orange; }
+        .color-blue { color: blue; }
+
+        
+        
+    </style>
+</head>
+<body>    
+    <h3 id="h3id" class="color-orange">제1회 봄빛 수목원 여름꽃 축제</h3>
+    <h4 id="h4id" class="color-orange">수련 수국 무궁화 원추리</h4>
+    <p id="pid" class="color-blue">아름다운 여름꽃과 시원한 바다를 ....</p>
+    <ul>
+        <li> 일시 : <span id="spid" class="color-blue">6월 15일 부터 8월 15일 까지</span></li>
+        <li class="li-target"> 장소 : 봄빛 수목원 일원</li>
+    </ul>  
+    
+    <!-- <p></p>
+    <span>p2</span>
+    <p>p3</p>
+    <span>p4</span>
+    <p>p5</p>
+    <p>p6</p> -->
+    
+</body>
+</html>
