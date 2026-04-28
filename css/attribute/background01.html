@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 300px;
+            border: 1px solid red;
+        }
+
+        .back { background-color: green;}
+
+        .back-img {
+            background-image: url('../../images/img003.jpeg');
+            /* background-size: 300px 200px; */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .back-img2 {
+            background-image: url('../../images/img002.jpg');
+            background-repeat: no-repeat;
+            /* background-size: cover; */
+            /* background-position: left-bottom; */
+            background-position: right top;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="box back"></div>
+
+    <div class="box back-img"></div>
+
+    <div class="box back-img2"></div>
+
+</body>
+</html>
