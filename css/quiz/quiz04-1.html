@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* h3 {
+            background-color: lightgray;
+        } */
+
+        .back-lightgray {
+            background-color: lightgray;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        /*
+            case 1 각자 위치 잡기
+            relative
+        
+
+        .container {
+            width: 500px;
+            height: 300px;
+            border: 5px solid black;
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+
+        
+        .red-box {
+            background-color: red;
+            position: relative;
+            left: 55px;
+            top: -245px;   
+        }
+
+        .orange-box {
+            background-color: orange;
+            position: relative;
+            left: 105px;
+            top: -295px;
+            z-index: 10;        
+        }
+
+        .yellow-box {
+            background-color: yellow;
+            left: 55px;
+            top: -345px;
+        }
+        */
+
+        /*
+            case 2 각자 위치 잡기
+            relative
+       
+
+        .container {
+            width: 500px;
+            height: 300px;
+            border: 5px solid black;
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+
+        
+        .red-box {
+            background-color: red;
+            position: relative;
+            left: 55px;
+            top: -245px;   
+        }
+
+        .orange-box {
+            background-color: orange;
+            position: relative;
+            left: 105px;
+            top: 155px;
+            z-index: 10;        
+        }
+
+        .yellow-box {
+            background-color: yellow;
+            left: 55px;
+            top: -345px;
+        } */
+
+        /*
+            case 3 내부에 포함하는 구조
+            relative
+        
+
+        .container {
+            width: 500px;
+            height: 300px;
+            border: 5px solid black;
+            
+            margin-left: 50px;
+            margin-top: 10px;
+            /* margin-bottom: 10px;
+        }
+
+        
+        .red-box {
+            background-color: red;
+            position: relative;
+            
+        }
+
+        .orange-box {
+            background-color: orange;
+            position: relative;
+            top: -50px;
+            left: 50px;
+            z-index: 5;                    
+        }
+
+        .yellow-box {
+            background-color: yellow;
+            position: relative;
+            top: -100px;
+        } */
+
+
+        /*
+            case 4 내부에 포함하는 구조 + absolute
+        */
+
+        .container {
+            width: 500px;
+            height: 300px;
+            border: 5px solid black;            
+            margin-left: 50px;
+            margin-top: 50px;
+            /* margin-bottom: 10px; */
+            position: relative;
+        }
+
+        
+        .red-box {
+            background-color: red;
+            
+            
+        }
+
+        .orange-box {
+            background-color: orange;
+            position: absolute;
+            top:50px;
+            left:50px;
+            z-index: 5;                    
+        }
+
+        .yellow-box {
+            background-color: yellow;
+        
+        }
+
+</style>
+
+</head>
+<body>
+
+    <div class="back-lightgray">
+        <h3>백그라운드 컬러가 라이트그레이</h3>
+        <h3>h3글자^^</h3>
+    </div>
+
+    <!-- <div class="container">
+        <div class="box red-box">에이</div>
+        <div class="box orange-box">비</div>
+        <div class="box yellow-box">씨</div>
+    </div> -->
+
+    <div class="container">
+        <div class="box red-box">에이</div>
+        <div class="box orange-box">비</div>
+        <div class="box yellow-box">씨</div>
+    </div>
+
+
+    <!-- <div>
+        하단 다음에 추가될 내용
+    </div> -->
+
+</body>
+</html>
