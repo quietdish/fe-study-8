@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            margin: 0;   
+            padding: 0;  
+            box-sizing: border-box; 
+        }
+        
+        .container {            
+            width: 600px;
+            border: 1px solid black;
+        }
+
+        .box1 {
+            background-color:lightgray;
+            float: left;
+            width: 300px;     
+            border: 1px solid black;
+        }
+
+        img {
+            width: 150px;
+            float: left;
+        }
+
+        .container::after {
+
+        }
+
+        /*
+        .box1 {
+            background-color:gray;
+            width: 150px;     
+            border: 1px solid black;
+            
+        }
+
+        .span1{            
+            float: left;
+        }
+
+        .box2 {            
+            background-color:gray;
+            width: 150px;
+            border: 1px solid black;
+            
+        }
+
+        .span2{            
+            float: right;
+        } */
+
+    </style>   
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="box1">
+            <img src="../../images/ocean.jpg">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem aut fugiat amet sit mollitia vitae enim, soluta nam qui harum magnam accusantium eum itaque eius voluptate impedit consectetur voluptas aliquid.</p>
+        </div><div class="box2">
+            <img src="../../images/ocean.jpg">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate possimus voluptatem natus distinctio temporibus doloremque aliquam eos accusamus, magni ipsum autem, voluptas quod repellat! Officia quos vel tenetur est culpa!</p>
+        </div>
+
+    <!-- <div class="container">
+        <div class="box1">
+            <img src="url('../../images/ocean.jpg')">
+            <div span="span1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem aut fugiat amet sit mollitia vitae enim, soluta nam qui harum magnam accusantium eum itaque eius voluptate impedit consectetur voluptas aliquid.</div>
+        </div>
+        <div class="box2">
+            <img src="url('../../images/ocean.jpg')">
+            <div span="span2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate possimus voluptatem natus distinctio temporibus doloremque aliquam eos accusamus, magni ipsum autem, voluptas quod repellat! Officia quos vel tenetur est culpa!</div>
+        </div>
+    </div>
+    -->
+</body>
+</html>
