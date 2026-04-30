@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;    
+            
+            transition-property: all;
+            transition-duration: 1s;            
+        }
+        
+        .container {
+            background-color: lightgray;
+            width: 100%;
+        }
+
+        .box1 {
+            background-color: red;          
+        }
+
+        .container:hover .box1 {
+            width:400px;
+        }
+
+        .box2 {
+            background-color: blue;
+        }
+
+        .box3 {
+            background-color: black;
+        }
+
+        .container:hover .box3 {
+            transform: translateX(200px);
+        }
+
+        .box4 {
+            background-color: green;
+        }
+
+        .box5 {
+            background-color: yellow;
+            /* float: ; */
+        }
+        
+        .box4:hover, .box5:hover {
+            border: 10px solid red;   
+        }
+
+        /* 
+        .box4:hover {
+            border: 10px solid red;
+        }
+        */
+
+        .container::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .flex-container {
+            display: flex;
+        }
+
+    </style>
+
+</head>
+
+<body>
+        
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+
+        <div class="flex-container">
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>  
