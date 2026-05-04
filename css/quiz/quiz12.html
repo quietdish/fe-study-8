@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 50px;
+            width: 700px;
+            border: 1px solid black;
+        }
+
+        .header {
+            display: flex;
+            /* background-color: white; */
+            justify-content: space-between;
+        }
+
+        .left {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .right {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        /* --------------- 상단 Header 영역 스타일 - 끝 -------------- */
+        .content-center {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .section {
+            width: 70%;
+            height: 300px;
+            background-color: rgb(255, 196, 0);
+            display: flex;
+            
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6 {
+            width: 100px;
+            height: 50px;
+            background-color: black;
+            display: flex;
+            margin: 30px;
+
+        }
+
+        .aside {
+            width: 30%;
+            height: 300px;
+            background-color: green;
+        }
+
+        .footer {
+            /* width: 700px; */
+            height: 100px;
+            background-color: blue;
+        }
+
+        /* .box-wrap {
+            width: 340px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        } */
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="left content-center">메인메뉴</div>
+            <div class="right content-center">마이페이지</div>
+        </div>
+
+        <div class="main">
+            <div class="section">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="box3"></div>
+                    <div class="box4"></div>
+                    <div class="box5"></div>
+                    <div class="box6"></div>
+                </div>
+            </div>
+            <div class="aside content-center">aside</div>
+        </div>
+
+        <div class="footer content-center">footer</div>
+
+
+    </div>
+
+</body>
+
+</html>
