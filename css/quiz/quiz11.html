@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 800px;
+            height: 500px;
+            margin: 0 auto;
+
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+
+        .top-left {
+            background-color: yellow;
+            width: 50%;
+            height: 100px;
+        }
+
+        .top-right {
+            background-color: gray;
+            width: 50%;
+            height: 100px;
+        }
+
+        .third {
+            width: 100%;
+            background-color: purple;
+            height: 100px;
+        }
+
+        .mid-left {
+            background-color: lightblue;
+            width: 40%;
+            height: 200px;
+        }
+
+        .mid-right {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mid-right1 {
+            background-color: yellow;
+            height: 100px;
+        }
+
+        .mid-right2 {
+            background-color: rgb(255, 187, 0);
+            height: 100px;
+        }
+
+        .bottom-1 {
+            background-color: yellow;
+            width: 25%;
+            height: 100px;
+        }
+
+        .bottom-2 {
+            background-color: orange;
+            width: 25%;
+            height: 100px;
+        }
+
+        .bottom-3 {
+            background-color: aquamarine;
+            width: 25%;
+            height: 100px;
+        }
+
+        .bottom-4 {
+            background-color: cadetblue;
+            width: 25%;
+            height: 100px;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="top-left"></div>
+        <div class="top-right"></div>
+        <div class="third"></div>
+        <div class="mid-left"></div>
+        <div class="mid-right">
+            <div class="mid-right1"></div>
+            <div class="mid-right2"></div>
+        </div>            
+        <div class="bottom-1"></div>
+        <div class="bottom-2"></div>
+        <div class="bottom-3"></div>
+        <div class="bottom-4"></div>
+    </div>
+
+</body>
+
+</html>
