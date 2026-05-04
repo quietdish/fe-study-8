@@ -36,26 +36,11 @@
             background-color: red;
         }
 
-        /* --------------- 상단 Header 영역 스타일 - 끝 -------------- */
         .content-center {
             color: white;
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        .main {
-            display: flex;
-        }
-
-        .section {
-            width: 70%;
-            height: 300px;
-            background-color: rgb(255, 196, 0);
-            display: flex;
-            
-            align-items: center;
-            justify-content: center;
         }
 
         .box1,
@@ -68,28 +53,40 @@
             height: 50px;
             background-color: black;
             display: flex;
-            margin: 30px;
+            
+        }
 
+        .main {
+            display: flex;
+        }
+
+        .section {
+            width: 490px;
+            height: 300px;
+            background-color: rgb(255, 196, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .aside {
-            width: 30%;
+            width: 210px;
             height: 300px;
             background-color: green;
         }
 
-        .footer {
-            /* width: 700px; */
-            height: 100px;
-            background-color: blue;
-        }
-
-        /* .box-wrap {
+        .box-wrap {
             width: 340px;
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
-        } */
+        }
+
+        .footer {
+            width: 700px;
+            height: 100px;
+            background-color: blue;
+        }
 
     </style>
 
@@ -105,6 +102,7 @@
 
         <div class="main">
             <div class="section">
+                <div class="box-wrap">
                     <div class="box1"></div>
                     <div class="box2"></div>
                     <div class="box3"></div>
@@ -116,8 +114,7 @@
             <div class="aside content-center">aside</div>
         </div>
 
-        <div class="footer content-center">footer</div>
-
+    <div class="footer content-center">footer</div>
 
     </div>
 
