@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>browser02.html</h1>
+
+    <script>
+        //js code
+
+        console.log("콘솔창 출력");
+
+        // alert 경고창
+        //alert('alert창 메시지');  //알림 경고창
+
+        // confirm 확인창
+        //confirm("확인창 메시지");   // 확인/취소 버튼 뜸..
+        // let result1 = confirm("확인창 누르세요");
+        // console.log(result1);
+        //if(...)
+
+        // prompt 입력받는 창
+
+        // let result2 = prompt("당신의 이름은? ");
+        // console.log(result2);
+        // 확인 : 입력 -> 입력값    입력X 공백 -> 공백
+        // 취소 : null
+
+        // if(result2 == null)
+        // if(result2 == '')
+
+
+        // window 브라우저객체
+        // open 기능 새창 팝업창
+
+        //window.open('https://netflix.com', '_blank');
+        //window.open('https://netflix.com', '_self');
+        
+        //window.open('https://netflix.com', '_blank', 'width=400,height=300');
+        window.open('https://netflix.com', 'nflx', '_blank', 'width=400,height=200');
+        window.open('https://tving.com', 'tvig', '_blank', 'width=400,height=200')
+
+        window.open('popup.html', 'popup', '_blank', 'width=300, height=150')
+
+    </script>
+
+</body>
+
+</html>
