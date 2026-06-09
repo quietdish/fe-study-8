@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>달식당</title>
+</head>
+
+<body>
+
+    <P>달식당 <span onclick="increaseCnt()">좋아요 💖</span><span id="cnt">0</span> </P>
+
+    <script>
+
+        const cnt = document.getElementById('cnt');
+
+        let count = 0;
+
+        function increaseCnt() {
+
+            /* 1.
+            //변수 활용
+
+            count++;
+            //count = count + 1;
+            //옆에 보이는 숫자값(카운트)을 증가시켜서 세팅한다
+            cnt.textContent = count;
+            */
+
+            /* 2.
+            //요소의 텍스트콘센츠 접근해서 활용  넘버() 숫자 변환
+
+            //String()  Number()
+
+            //cnt.textContent = cnt.textContent + 1;
+            //12 line 문자로 인식 되고있음..
+            */
+
+            cnt.textContent = Number(cnt.textContent) + 1;
+            
+        }
+
+    </script>
+
+    <!-- 카운트 저장할 변수 선언 */
+    // let count = 0;
+
+    // const divLike = document.getElementById('Like');
+
+    // divLike.addEventListener('click', () => {
+    // count++;
+
+    // divLike.innerText = `달식당 좋아요 💖 ${count}`;
+    // }); -->
+
+</body>
+
+</html>
