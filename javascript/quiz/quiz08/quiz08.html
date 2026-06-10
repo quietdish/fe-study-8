@@ -1,0 +1,185 @@
+<!-- *basecode -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>재생/정지</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 20px;
+
+            position: relative;
+
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+        }
+
+        .box:hover {
+            animation-play-state: paused;
+        }
+
+        .ani1:hover,
+        .ani2:hover,
+        .ani3:hover {
+            animation-play-state: paused;
+        }
+
+        .ani1 {
+            animation-name: animation1;
+        }
+
+        .ani2 {
+            animation-name: animation2;
+
+        }
+
+        .ani3 {
+            animation-name: animation3;
+        }
+
+        @keyframes animation1 {
+            0% {
+                background-color: blue;
+                left: 0px;
+            }
+
+            50% {
+                background-color: orange;
+                left: 100px;
+            }
+
+            100% {
+                background-color: pink;
+                left: 200px;
+            }
+        }
+
+        @keyframes animation2 {
+            0% {
+                background-color: blue;
+                top: 0px;
+            }
+
+            50% {
+                background-color: orange;
+                top: 100px;
+            }
+
+            100% {
+                background-color: pink;
+                top: 200px;
+            }
+        }
+
+        @keyframes animation3 {
+            0% {
+                background-color: blue;
+                top: 0px;
+                left: 0px;
+            }
+
+            50% {
+                background-color: orange;
+                top: 100px;
+                left: 100px;
+            }
+
+            100% {
+                background-color: pink;
+                top: 200px;
+                left: 200px;
+            }
+        }
+
+
+        .stop-box {
+            width: 100px;
+            height: 50px;
+            background-color: lightgray;
+        }
+
+        .stop-box:hover~.box { /*호버*/
+            animation-play-state: paused;
+        }
+
+        /* 추가 2단락 */
+        .stopAnimation {
+            animation-play-state: paused;
+        }
+
+        .playAnimation {
+            animation-play-state: running;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="stop-box">멈추기</div>
+    <!-- <button id="play" onclick="btn_click()">재생</button>
+    <button id="stop" onclick="btn_click()">정지</button> -->
+    <button id="btn_play">재생</button>
+    <button id="btn_stop">정지</button>
+
+    <div class="box ani1"></div>
+    <div class="box ani2"></div>
+    <div class="box ani3"></div>
+
+    <script>
+
+        //재생버튼              # 넣어야된대 -,.-
+        document.querySelector('#btn_play').addEventListener('click', () => {
+            // console.log("ppppppppppppppp");
+            const boxes = document.querySelectorAll('.box');
+
+            //boxes[0] boxes[1] boxes[2] 
+            for (let i = 0; i < boxes.length; i++) {
+                //boxes[i].style.animationPlayState = 'running';
+                boxes[i].classList.remove('stopAnimation');
+            }
+        })
+
+        //정지버튼                  #
+        document.querySelector('#btn_stop').addEventListener('click', () => {
+            // console.log("sssssssssssssss");
+            const boxes = document.querySelectorAll('.box');
+
+            //boxes[0] boxes[1] boxes[2] 
+            for (let i = 0; i < boxes.length; i++) {
+                boxes[i].classList.add('stopAnimation');
+            }
+        })
+
+
+        // function play() {
+        // }
+
+        // function stop() {
+        // }
+
+        /* <button id="btn_evt2">이벤트 버튼2</button> */
+        // document.getElementById('play').onclick = ani1; /* 온클릭 */
+        // document.getElementById('stop').onclick = ani1;
+
+        // function event3() {
+        //     console.log('event3() 호출됨');
+        //     document.getElementById('target').textContent = '이벤트 등록3';
+        // }
+
+        // const btn_evt3 = document.getElementById('btn_evt3');
+        // btn_evt3.addEventListener('click', event3);     /* 온클릭 X */
+        // //이벤트 등록           무슨이벤트, 어떤걸실행할지 함수
+
+
+    </script>
+</body>
+
+</html>
