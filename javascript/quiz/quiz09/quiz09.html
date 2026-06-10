@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js quiz09</title>
+
+    <style>
+        /* 필요시 작성 */
+
+        /* .bg-gray {
+            background-color: gray;
+        }
+
+        #p1.red-text {
+            color: red;
+        } */
+
+        .red {
+            color: red;
+        }
+
+        .bg-gray {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="main"> <!-- mainDiv -->
+            <p id="p1">p1 텍스트</p> <!-- p1Tag-->
+            <p id="p2">p2 텍스트</p> <!-- p2Tag-->
+        </div>
+    </div>
+
+    <button onclick="changeMain()">main 배경색 gray로 변경</button>
+    <button onclick="changeP1()">p1 글자색 red로 변경</button>
+    <button onclick="changeP2()">"p2 텍스트"를 "p2 글자" 로 변경</button>
+
+
+    <script>
+        /* 코드 작성 부분 */
+        const mainDiv = document.getElementById('main');
+        const p1Tag = document.getElementById('p1');
+        const p2Tag = document.getElementById('p2');
+
+        //기본 함수
+        function changeMain() {
+            //mainDiv.style.backgroundColor = 'gray';
+            document.getElementById('main').style.backgroundColor = 'gray';
+        }
+
+        function changeP1() {
+            //p1Tag.style.color = 'red';
+            document.getElementById('p1').classList.add('red');
+        }
+
+        function changeP2() {
+            document.getElementById('p2').textContent = 'p2 글자';
+        }
+
+
+
+    </script>
+</body>
+
+</html>
+
+
+<!-- +++++ 응용버전 1
+버튼을 2개 추가합니다.
+추가버튼 1. main 배경색을 white 로 다시 변경하기
+추가버튼 2. p1 글자색 다시 black 로 다시 변경하기
+
+
++++++ 응용버전 2
+main 배경색 gray로 변경 버튼을 누를때마다 배경색 적용/해제가 작동함
+p1 글자색 red로 변경 버튼을 누를때마다 글자색 적용/해제가 작동함
+
+
+"p2 텍스트"를 "p2 글자" 로 변경 버튼을 누를때마다 글자가 아래 순서대로 계속 바뀜.
+
+
+p2 텍스트
+p2 하나
+p2 둘
+p2 셋
+p2 넷
+p2 텍스트
+...(계속 순환) -->
