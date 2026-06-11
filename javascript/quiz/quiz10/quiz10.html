@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q10</title>
+</head>
+
+<body>
+
+    <input type="text" id="loginId" placeholder="아이디"><br>
+    <input type="password" id="loginPw" placeholder="비밀번호"><br>
+    <button id="btnLogin" onclick="tryLogin()">로그인 시도</button><br>
+
+    <!-- <form id="form_id" action="" method=""> -->
+
+    <!-- <label><input type="text" id="input_id" placeholder="아이디"> </label>
+        <label><input type="password" id="input_pw" placeholder="비밀번호"> </label>
+        <button type="submit" id="btn_submit">로그인 시도</button> -->
+    <!-- <button type="button" id="btn_extra">extra버튼</button> -->
+
+    <!-- <form>
+        <input type="text" id="input_id" placeholder="아이디"><br>
+        <input type="password" id="input_pw" placeholder="비밀번호"><br>
+        <button id="btnLogin" onclick="tryLogin()">로그인 시도</button><br>
+        
+    </form> -->
+
+
+    <script>
+
+        const input_id = document.getElementById('loginId');
+        const input_pw = document.getElementById('loginPw');
+
+
+        /*
+        *로그인 버튼을 누르면.
+        > 아이디와 비밀번호에 있는 입력된 텍스트를 없애기
+    
+        *아이디 입력칸에서 키보드 입력 시,
+        무슨 키가 눌렸는지 확인 해보고 엔터가 눌리면 비밀번호 입력 칸으로 이동
+    
+        *비밀번호 입력칸에서 키보드 입력 시,
+        엔터가 눌리면 로그인 버튼을 누른것과 동일한 기능을 수행
+        */
+        function tryLogin() {
+            input_id.value = '';
+            input_pw.value = '';
+        }
+
+        input_id.addEventListener('keydown', (event) => {
+            //event 키보드 이벤트 정보
+
+            if (event.key == 'Enter') {  //엔터입력 여부
+                input_pw.focus();
+            }
+        })
+
+        input_pw.addEventListener('keydown', (event) => {
+
+            //비밀번호 칸에서 엔터를 눌렀을때
+            if (event.key == 'Enter') {
+                //로그인 버튼 눌렀을때와 동일한 기능
+
+                //1) 동일한 코드 수행
+                //input_id.value = '';
+                //input_pw.value = '';
+
+                //2) 실제 버튼 이벤트 발생
+                //document.getElementById('btnLogin').click();
+
+                //3) 동일한 함수 그대로 호출
+                tryLogin();
+            }
+        })
+
+        /* const input_id = document.getElementById('loginId');
+        const input_pw = document.getElementById('loginPw');
+
+        function tryLogin() {
+            input_id.value = '';
+            input_pw.value = '';
+        }
+
+        function tryLogin() {
+            event.preventDefault();
+        }
+
+        input_pw.addEventListener('submit', () => { })
+        */
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+<!-- #퀴즈 원문
+
+form 내부에 input 에서 엔터키 입력시, submit 을 발생시킴 주의
+preventDefault() 수행해야 막을수 있음
+
+
+<input type="text" id="loginId" placeholder="아이디"><br>
+<input type="password" id="loginPw" placeholder="비밀번호"><br>
+<button id="btnLogin" onclick="tryLogin()">로그인 시도</button><br>
+
+*로그인 버튼을 누르면.
+> 아이디와 비밀번호에 있는 입력된 텍스트를 없애기
+
+*아이디 입력칸에서 키보드 입력 시,
+무슨 키가 눌렸는지 확인 해보고 엔터가 눌리면 비밀번호 입력 칸으로 이동
+
+*비밀번호 입력칸에서 키보드 입력 시,
+엔터가 눌리면 로그인 버튼을 누른것과 동일한 기능을 수행
+
+
++Option 1
+
+위 입력값들을 form 태그로 감싸고, 동일하게 작동하도록 수정하세요.
+
++Option 2
+로그인 시도 버튼을 눌렀을때,
+만약 비어있는 입력값이 있다면 해당 값을 입력하라고 메시지를 띄우고 해당 입력칸으로 이동시키세요.
+
+ex)
+아이디 입력 , 비밀번호 입력 -> 로그인시도 그대로 진행
+아이디 입력 , 비밀번호 빈칸 -> 로그인시도시 비밀번호 입력 안내 후 비밀번호 칸으로 이동
+아이디 빈칸, 비밀번호 입력 -> 로그인시도시 아이디 입력 안내 후 아이디 칸으로 이동
+아이디 빈칸, 비밀번호 빈칸 -> 로그인시도시 아이디 입력 안내 후 아이디 칸으로 이동
+
+
+*basecode
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<input type="text" id="loginId" placeholder="아이디"><br>
+<input type="password" id="loginPw" placeholder="비밀번호"><br>
+<button id="btnLogin" onclick="tryLogin()">로그인 시도</button><br>
+
+<script>
+//코드작성
+</script>
+</body>
+</html>
+
+#퀴즈10 원문 끝 -->
