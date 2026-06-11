@@ -69,31 +69,40 @@
         // textARr[index];
 
         function changeP2() {
-                const p2 = document.getElementById('p2');
-                p2.textContent = textArr[index];
-                index = (index + 1) % textArr.length; // 0, 1, 2, 3, 4 순서로 계속 순환함
-            }
+            const p2 = document.getElementById('p2');
+            p2.textContent = textArr[index];
+            index = (index + 1) % textArr.length; // 0, 1, 2, 3, 4 순서로 계속 순환함
+        }
 
 
 
         function changeP2() {
-                //document.getElementById('p2').textContent = 'p2 글자';
+            //document.getElementById('p2').textContent = 'p2 글자';
 
-                const p2 = document.getElementById('p2');
+            const p2 = document.getElementById('p2');
 
-                if (p2.textContent == 'p2 텍스트') {
-                    p2.textContent = 'p2 하나';
-                } else if (p2.textContent == 'p2 하나') {
-                    p2.textContent = 'p2 둘';
-                } else if (p2.textContent == 'p2 둘') {
-                    p2.textContent = 'p2 셋';
-                } else if (p2.textContent == 'p2 셋') {
-                    p2.textContent = 'p2 넷';
-                } else {
-                    (p2.textContent = 'p2 텍스트');
-                }
-
+            if (p2.textContent == 'p2 텍스트') {
+                p2.textContent = 'p2 하나';
+            } else if (p2.textContent == 'p2 하나') {
+                p2.textContent = 'p2 둘';
+            } else if (p2.textContent == 'p2 둘') {
+                p2.textContent = 'p2 셋';
+            } else if (p2.textContent == 'p2 셋') {
+                p2.textContent = 'p2 넷';
+            } else {
+                (p2.textContent = 'p2 텍스트');
             }
+
+        }
+
+
+        function restoreMain() {
+            document.getElementById('main').style.removeProperty('background-color');
+        }
+
+        function restoreP1() {
+            document.getElementById('p1').classList.remove('red');
+        }
 
     </script>
 </body>

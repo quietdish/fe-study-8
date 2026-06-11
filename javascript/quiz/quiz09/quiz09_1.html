@@ -58,11 +58,26 @@
         }
 
         ////응용1
-        function changeMain() {
+        function restoreMain() {
             //mainDiv.style.backgroundColor = 'white';
             //document.getElementById('main').style.backgroundColor = 'white';
             document.getElementById('main').style.removeProperty('background-color');
         }
+
+
+        function changeP1() {
+            //p1Tag.style.color = 'red';
+            document.getElementById('p1').classList.add('red');
+        }
+
+        function changeP2() {
+            document.getElementById('p2').textContent = 'p2 글자';
+        }
+
+        function restoreP1() {
+            document.getElementById('p1').classList.remove('red');
+        }
+
 
 
 
